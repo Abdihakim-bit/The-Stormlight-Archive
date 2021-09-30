@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <link rel="icon" type="image/ico" href="../images/icon.ico">
+    <link rel="stylesheet" href="../styles/feedback.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+	<title>The Strormlight Archive</title>
+    
+</head>
+
+<body>
+	<header>
+        <img src="../images/title3.jpg" alt="logo">
+        <nav class="clear">
+            <ul>
+                <li><a href='#'>Feedback</a><li>
+                <li><a href='images.html'>Images</a>
+                    <ul>
+                         <li>
+                            <a href='images.html'>sub page 1</a>
+                            <ul>
+                                <li><a href="images.html" >sub page 1 sub sub page 1</a></li>
+                                <li><a href="images.html" >sub page 1 sub sub page 1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href='images.html'>sub page 2</a>
+                            <ul>
+                                <li><a href="images.html" >sub page 2 sub sub page 1</a></li>
+                                <li><a href="images.html" >sub page 2 sub sub page 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href='index.html'>Home</a></li>
+            </ul>
+        </nav>
+	</header>  
+    <aside id="left">
+        <h2>References</h2>
+        <ul>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li><a href="https://www.secondbrickfast.com/index.php/stormlight-characters">Lego Fanart - Rick Martin</a></li>
+            <li>&nbsp;</li>
+            <li><a href="https://www.reddit.com/r/Stormlight_Archive/comments/f23jtz/characters_of_stormlight_archive_oc/">Characters of Stormlight Archive (OC) - juanesburbano</a></li>            
+            <li>&nbsp;</li>
+            <li><a href="https://stormlightarchive.fandom.com/wiki/The_Way_of_Kings">Stormlight Archive Wiki</a></li>
+        </ul>
+    </aside>
+    <main>
+        <article>
+            <h1>Feedback Form</h1>
+    		<form name="feedback_form" id="feedback_form">
+    			<fieldset>
+	        		<legend>Your Information</legend>
+        			<label for="name">Name:</label>
+					<input tabindex="1" type="text" name="name" id="name" required><br>
+	        		<label for="email">E-Mail:</label>
+	        		<input tabindex="2" type="email" name="email" id="email" autofocus required><br>
+                    <label for="gender_type">Gender and Age:</label>
+					<select tabindex="3" name="gender_type" id="gender_type">
+				    	<option value="f">Female</option>
+				    	<option value="m">Male</option>            
+				    	<option value="o">Other</option>
+					</select>
+                    <label for="age_group">Age group:</label>
+                    <select tabindex="4" name="age group" id="age_group">
+				    	<option value="y">Below 18</option>
+				    	<option value="m">Older than 18 but younger than 35</option>            
+				    	<option value="o">Above 35</option>
+					</select><br>
+                    <label for="books">Choose read books:</label>
+                    <select tabindex="5" id="books" name="books" multiple>
+                        <option value="the way of kings">The Way of Kings</option>
+                        <option value="words of radiance">Words of Radiance</option>
+                        <option value="oathbringer">Oathbringer</option>
+                    </select>
+				</fieldset>
+                <fieldset>
+                    <legend>Comment</legend>
+                    <label for="comment">Comment:</label>
+                    <textarea tabindex="6" id="comment" rows="7" cols="50"></textarea>
+                </fieldset>
+                <fieldset  id="buttons">
+					<legend>Submit Your Feedback</legend>
+					<label>&nbsp;</label>
+                    <input tabindex="7" type="submit" id="submit" value="Submit" onclick="myFunction()">
+                    <input tabindex="8" type="reset" id="reset" value="Reset Fields"><br>
+                </fieldset>
+            </form>
+            <script>
+                function myFunction() { alert("Form has been submitted. Thank you for your feedback!"); }
+            </script>
+        </article>
+    </main>
+    <aside id="right">
+        <form name="feedback" id="feedback">
+            <fieldset>
+                <Legend>Website feedback</Legend>
+                <h>Which of the following attributes would you use to describe the website:</h><br>
+                <input tabindex="9" type="checkbox" id="fun" name="fun" value="fun">
+                <label for="fun">Fun to visit</label><br>
+                <input tabindex="10" type="checkbox" id="well_designed" name="well_designed" value="well_designed">
+                <label for="well_designed">Well designed</label><br>
+                <input tabindex="11" type="checkbox" id="good_colors" name="good_colors" value="good_colors">
+                <label for="good_colors">Uses good colors</label><br>
+                <input tabindex="12" type="checkbox" id="browse" name="browse" value="browse">
+                <label for="browse">Easy to browse</label><br>
+            </fieldset>
+            <fieldset>
+                <p>Will you Visit my Site again:</p>
+                <label class="radio-inline">
+                <input tabindex="13" type="radio" name="rs" id="yes" checked>Yes
+                </label>
+                <label class="radio-inline">
+                <input tabindex="14" type="radio" name="rs" id="yes">No
+            </fieldset>
+            <fieldset  id="buttons">
+				<legend>Submit Your Feedback</legend>
+				<label>&nbsp;</label>
+                <input tabindex="15" type="submit" id="submit" value="Submit" onclick="myFunction()">
+            </fieldset>
+        </form>
+    </aside>
+    <footer>
+        <div class="line"></div>
+        <p>All copyrights belong to their rightful owners.</p> <!-- Change the copyright notice -->
+        <a href="mailto:abdihakim78.f@gmail.com">Contact me</a>
+    </footer>
+
+</body>
+
+</html>

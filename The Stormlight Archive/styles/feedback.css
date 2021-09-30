@@ -1,0 +1,61 @@
+
+#radio label{
+    float: none;
+}
+
+#radio input[type="radio"]{
+    margin-left: 3ems;
+    width: auto;
+}
+
+legend {
+    color: black;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+
+label, input, select, button {
+	font-size: 90%;
+}
+
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+#fun, #well_designed, #good_colors, #browse, label.radio-inline {
+    width: auto;
+}
+
+
+input:required, input[required] {
+	border: 2px solid red;
+    color: #800000;
+}
+
+input:valid {
+	border: 1px solid black;
+}
+
+input:invalid {
+    border: 2px solid red;
+    color: #800000;
+	box-shadow: none;
+}
+
+#buttons input {
+	width: 10em;
+    text-align: center;
+}
+
+br {
+    clear: both;
+}
